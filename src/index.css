@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.cl-avatarBox{
+    height: 3rem;
+    width: 3rem;
+}
+
+.arrows{
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+}
+
+.arrows {
+  /* default styles: apply on every screen, including phones */
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+}
+
+@media (min-width: 768px) {
+  .arrows {
+    /* these override the default from 768px and up */
+     height: 40px;
+    width: 40px;
+    margin: 1px;
+  }
+}
+
+button {
+  transition: transform 0.1s ease ;
+  cursor: pointer;
+  
+}
+
+button:hover{
+  opacity: 70%;
+
+}
+
+button:active {
+  transform: scale(0.95);
+}
